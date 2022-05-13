@@ -1,0 +1,81 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:
+  linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+  linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+background-size: 100px 100px;
+background-color: #EC173A;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+#container>div{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(247, 242, 242);
+    /* line-height: 20px; */
+}
+#container>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 10px;
+}
+.productImg{
+    border-radius: 15px;
+}
+.name{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+img{
+    width: 100%;
+}
+#addToCart{
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    background-color: rgb(6, 167, 6);
+    border: transparent;
+    border-radius: 15px;
+    width: 80%;
+    
+}
+#addToCart:hover{
+    background-color: green;
+}
+.priceBox{
+    display: flex;
+    margin-top: -10px;
+    /* gap: 20px; */
+    justify-content: space-around;
+}
+.price, .strikeOff{
+    font-size: 16px;
+}
+.strikeOff{
+    text-decoration: line-through;
+}
+#container+button{
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(88, 88, 247);
+    border: none;
+    border-radius: 15px;
+}
+button>a{
+    color: white;
+    text-decoration: none;
+}
